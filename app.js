@@ -86,7 +86,7 @@ app.use("/", userRouter);
 // Invalid Domain name
 app.all("*", (req, res, next)=>{
     next(new Error("Page Not Found")); 
-});
+})
 
 // Error Handler Middleware
 app.use((err, req, res, next)=>{
